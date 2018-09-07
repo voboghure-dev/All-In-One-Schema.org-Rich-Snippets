@@ -1,29 +1,30 @@
-=== All In One Schema.org Rich Snippets ===
+=== All In One Schema Rich Snippets ===
 Contributors: brainstormforce, yawalkarm
-Donate link: http://www.brainstormforce.com
-Tags: Review, Event, People, Product, Recipe, Software Application, Video, Article, rdfa, rich snippet, schema.org, schema, microdata, microformat, SERP, Google, Yahoo, Bing
+Donate link: https://www.brainstormforce.com
+Tags: schema markup, structured data, rich snippets, schema.org, Microdata, schema
 Requires at least: 3.7
-Tested up to: 4.0.0
-Stable tag: 1.2.0
+Tested up to: 4.9.8
+Stable tag: 1.5.4
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Boost CTR. Improve SEO & Rankings. Supports most of the content type. Works perfectly with Google, Bing, Yahoo & Facebook.
 
 == Description ==
 
+Get eye catching results in search engines with the most popular schema markup plugin. Easy implementation of schema types like Review, Events, Recipes, Article, Products, Services etc
+
 = What is a Rich Snippet? =
 It is basically a short summary of your page in the search results of Google, Yahoo, Bing and sometimes in the News feed of Facebook in nice format with star ratings, author photo, image, etc.
-[See Examples of Rich Snippets Here.](http://www.seomoz.org/blog/schema-examples/ "Rich Snippets Examples")
+[See Examples of Rich Snippets Here.](https://wpschema.com/free-rich-snippets-schema-plugin-for-wordpress/?utm_source=wp-org-readme&utm_medium=rich-snippet-example "Rich Snippets Examples")
 
 = How does a Rich Snippet help? =
 - It gives search engines only the important & precise information to display in search result snippets.
 - Rich Snippets are very interactive (photos, star ratings, price, author, etc.) to let you stand out from competition
-- [See what difference it makes](http://dashburst.com/google-search-what-are-rich-snippets/ "See the difference") in CTR (Click Through Rate)
+- [See what difference it makes](https://wpschema.com/free-rich-snippets-schema-plugin-for-wordpress/ "See the difference") in CTR (Click Through Rate)
 - Helps you rank higher in search results
 - Helps Facebook display proper information when users share your links on Facebook
 > **Curious, how does this plugin work?**
->
-> [Take a quick test drive!](http://drive.brainstormforce.com)
+
 
 = Supported Content Types - =
 This plugin supports the following types of Schemas:
@@ -56,39 +57,6 @@ Google will start showing rich snippets in the search results, as soon as your p
 
 You can test the rich snippet on Google Webmasters Rich Snippets Testing Tool
 
-== Release Notes ==
-What's new in this version 1.1.8
-From the very beginning - one of the major thing we are known for is our designs. It always has been one of our major focus. In fact you can say design is our DNA. However, in previous versions on AIOSRS, we felt it was missing somehow.
-
-We have received requests for article rich snippets from a huge no. of our users. So, we have added the Article type in this new update.
-
-Also, we observed most of the people did not want the MicroData box visible to users but only to search engines and requested the feature. However as this is against Google's guidelines, we gave a though to an alternative. Rather than people using the plugin only for 'displaying rich snippets in search results' and 'comporting on front end design' - why not design the plugin in a way that people would want the plugin for displaying a beautiful post summary and rich snippets would come with that? Wouldn't that be awesome? 
-
-So with this update, we stared trying the same thing; and with of course with feedbacks from our beloved users, we look forward making it even better.
-
-In brief, new things in updated version -
-* Redesigned Front End
-* Fully Responsive
-* Retina Ready
-* Options Panel to make settings and control front end display
-* Options Panel to make settings and control strings (Flexibility for admin & also helpful for sites in other languages)
-* Setting to make images look better
-Some of the other non design things -
-* Better reviews and ratings functionality
-* 100% MicroData. Rolled out RDFa completely
-* and many other small but important things
-
-Thanks [Nitin](http://profiles.wordpress.org/yawalkarm/ "Nitin Yawalkar") & Pratik for your major contributions
-
-******************** ******************** ******************** 
-Next scheduled version will include - 
-- Even simpler, shorter, typographic and more beautiful design of MicroData box. May be like this https://moqups.com/brainstormforce/5P0EaLtt
-- Redesigned admin panel
-- Refined MicroData input options
-- Support for more post types (Local Business, etc)
-Cheers & Regards,
-Sujay
-
 == Frequently Asked Questions ==
 
 = What is a Rich Snippet? =
@@ -96,7 +64,7 @@ It is basically a short summary of your page in the search results of Google, Ya
 = How does a Rich Snippet help? =
 - It gives search engines only the important & precise information to display in search result snippets.
 - Rich Snippets are very interactive (photos, star ratings, price, author, etc.) to let you stand out from competition
-- [See what difference it makes](http://dashburst.com/google-search-what-are-rich-snippets/ "See the difference") in CTR (Click Through Rate)
+- [See what difference it makes](https://www.brainstormforce.com/schema-rich-snippets/ "See the difference") in CTR (Click Through Rate)
 - Helps you rank higher in search results
 - Helps Facebook display proper information when users share your links on Facebook
 
@@ -111,6 +79,55 @@ Review, Event, People, Product, Recipe, Software Application, Video, Articles et
 4. Test the post or page URL in Google Rich Snippets Testing
 
 == Changelog ==
+
+= 1.5.4 =
+* Improvement: Dashboard UI Updated.
+* Fix: Removed publisher logo width-height meta tags.
+* Fix: Removed default border CSS for images in frontend.
+
+= 1.5.3 =
+* Improvement: Updated schema exiting action and enqueue files function.
+
+= 1.5.2 =
+* Fix: Frontend Summary box structure validation issue.
+* Fix: Editor object undefined issue lead js issue in the page.
+
+= 1.5.1 =
+* Fix: Plugin outputting extra output causing Ajax calls to break after last update.
+
+= 1.5.0 =
+* Improvement: Improved overall the security of the plugin by using sanitization and escaping the attributes wherever possible, checking nounce and user capabilities before any actions are performed.
+* Fix: XSS Vulnerability in the settings page, Thanks for the report Neven Biruski (DefenseCode).
+* Fix: Missing closing div tag in the generated schema markup breaking style for some themes.
+* Fix: Load the external scripts without protocol to prevent it from breaking on https sites.
+
+= 1.4.4 =
+* Fix: PHP fatal error to older version of PHP
+
+= 1.4.3 =
+* Fix: WooCommerce Support Added
+
+= 1.4.2 =
+* Improvement: Added company/organization and address in people schema. 
+* Improvement: Added nutrition & ingredients in recipe schema. 
+* Improvement: Added software image & operating system in software application schema. 
+* Improvement: Added video description in software application schema. 
+* Improvement: Added author, publisher - organization and publisher logo in article schema. 
+* Improvement: Added provider location, provider location image, and telephone in service schema. 
+* Improvement: Changes admin bar test rich snippet redirect link to the structured data testing tool.
+* Fix: removed all error in schema according to structured data testing tool.
+
+= 1.4.1 =
+* Fix: Compatibility fix WordPress 4.7.
+
+= 1.4.0 =
+* Added new service schema
+* Minor CSS fixes
+
+= 1.3.0 =
+* Improvement: Updated markup data to meet Google Structured data guidelines
+* Fixed: WordPress 4.4 compatibility
+* Fixed: Admin UI on small screens
 
 = 1.2.0 =
 * Improvement: WordPress 4.0 compatibility
@@ -181,6 +198,3 @@ Review, Event, People, Product, Recipe, Software Application, Video, Articles et
 
 = 1.0 =
 * Initial Release.
-
-== Upgrade Notice ==
-Note: Minor bug fixes. Update the plugin to enjoy bug free blogging!
